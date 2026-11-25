@@ -1,0 +1,90 @@
+* {
+  margin: 0;  /* Сброс настроек */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  /* Настройка */
+  background: linear-gradient(135deg, #1a1a2e, #16213e);  /* Задний фон */
+  min-height: 100vh;  /* Минимальная высота */
+  display: flex;
+  justify-content: center;  /* Выравнивание по цетру */
+  align-items: center;  /* Выравнивание по центру */
+  font-family: 'Tiny5';  /* Шрифт */
+  color: #eaeaea;
+}
+
+.container {
+  background: #0f3460;  /* Фон передней части с элементами */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);  /* Тень контейнера */
+  width: 450px;  /* Ширина */
+  display: flex;
+  flex-direction: column;  /* Вид расстановки элементов столбом */
+  gap: 25px;
+}
+
+.nums_in {
+  display: flex;
+  flex-direction: column;  /* Расстановка вводов */
+  gap: 15px;  /* Пространство между вводами */
+}
+
+input {  /* Панель ввода */
+  padding: 12px 15px;
+  background: #1a1a2e;  /* Фон */
+  color: #eaeaea;
+  border: 2px solid #533483;  /* Граница */
+  border-radius: 10px;  /* Закругление */
+  font-size: 14px;  /* Размер шрифта */
+  outline: none;
+  transition: border 0.3s;  /* Время анимации */
+}
+
+input:focus {  /* Поле во время ввода */
+  border-color: #e94560;  /* Цвет границы */
+  box-shadow: 0 0 10px rgba(233, 69, 96, 0.5);  /* Цвет окна */
+}
+
+button {  /* Кнопка */
+  flex: 1;
+  padding: 12px; /* Размер? */
+  background: #e94560;  /* Цвет фона */
+  color: white;  /* Цвет текста */
+  border: none;  /* Граница (её отсутствие) */
+  border-radius: 10px;  /* Закругление грани */
+  font-family: 'Tektur';  /* Шрифт */
+  font-size: 20px;  /* Размер шрифта */
+  font-weight: bold;  /* Тип шрифта */
+  cursor: pointer;  /* Вид курсора при наведении */
+  transition: all 0.3s;  /* Время анимации */
+}
+
+button:hover {  /* При наведении */
+  background: #ff5773;  /* Задник */
+  transform: translateY(-2px);  /* Перемещение кнопки */
+  box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+
+button:active {  /* При нажатии */
+  transform: translateY(0);  /* Возврат кнопки */
+}
+
+#result {  /* Внешний вид текста с id="result" */
+  font-size: 20px;  /* Размер текста */
+  font-weight: bold;  /* Тип текста */
+  color: #e94560;  /* Цвет текста */
+  text-shadow: 0 0 20px rgba(233, 69, 96, 0.7);
+}
+
+#balance {
+  font-size: 20px;  /* То же что и #result но для баланса */
+  font-weight: bold;  /* То же что и #result но для баланса */
+  color: #a94560;  /* То же что и #result но для баланса */
+  text-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
+}
+
+.material-symbols-outlined {  /* Иконка */
+  font-size: 20px;  /* Размер иконки */
+}

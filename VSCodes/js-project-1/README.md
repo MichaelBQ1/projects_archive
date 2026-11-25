@@ -1,0 +1,1 @@
+This is my test project to learn html, css, and javascript. There are many comments in './style.scc'.

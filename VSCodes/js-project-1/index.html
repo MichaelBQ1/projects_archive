@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кубы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=left_click" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hehe">
+            <h1>Кости (кубики)</h1>
+        </div>
+        <div class="nums_in">
+            <input type="number" id="message1" name="message1" placeholder="На что ставите (2-12)">
+            <input type="number" id="message2" name="message2" placeholder="Введите ставку">
+        </div>
+        <div class="butt">
+            <button onclick="play()"><span class="material-symbols-outlined">left_click</span> Играть</button>
+        </div>
+        <div class="rand_out">
+            <p id="balance">Баланс: 1000</p>
+            <p id="result">Здесь будет результат</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
